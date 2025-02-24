@@ -1,7 +1,8 @@
 package com.cen4802c.app;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -13,7 +14,8 @@ public class AppTest {
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
+    @DisplayName("Test the main function")
+    void recursive_Fibonacci() {
+        assertEquals(55, App.recursive_Fibonacci(10));
     }
 }

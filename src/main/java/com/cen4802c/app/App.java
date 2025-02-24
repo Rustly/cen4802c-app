@@ -16,7 +16,7 @@ public class App {
      * @param numberToCheck The number to check the Fibonacci sequence with.
      * @return The resulting calculation of the Fibonacci sequence.
      */
-    private static int recursive_Fibonacci(int numberToCheck) {
+    public static int recursive_Fibonacci(int numberToCheck) {
         return numberToCheck <= 1 ? numberToCheck : recursive_Fibonacci(numberToCheck - 1) + recursive_Fibonacci(numberToCheck - 2);
     }
 }
